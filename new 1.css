@@ -2,6 +2,14 @@ h1,
 span{
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 }
+.main__button{
+	background-color: rgba(60,60,255,255);
+	border-radius: 5px;
+	padding:20px 30px 20px 30px;
+}
+.main__button:hover{
+	background-color: rgba(0,0,255,255);
+}
 .block__link{
 	text-decoration: none;
 }
@@ -44,6 +52,7 @@ span{
 	padding: 100px 0px;
 	background-color: rgba(220,220,220,255);
 }
+.elems__horizontal,
 /*halloween block*/
 .elems__main, 
 /*niger block*/
@@ -97,22 +106,32 @@ span{
 /*text block always under image*/
 .elems__subtext__block{
 	background-color: rgba(255,255,255,255);
-	height: 100px;
+	height: 150px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
 	position: realtive;
+	padding: 5px 20px 5px 20px;
 }
 /*text always under image*/
 .elems__subtext{
 	color: rgba(0,0,0,255);
 	position: realtive;
+	font-size: 15px;
+	left: 10px;
+}
+.elems__subtext__small{
+	color: rgba(0,0,0,255);
+	position: realtive;
+	font-size: 12px;
+	left: 10px;
 }
 /*addition text always at bottom and left*/
 .elems__subtext__under{
 	color: rgba(0,0,0,255);
 	position: absolute;
+	font-size: 10px;
 	left: 10px;
 	bottom: 10px;
 }
@@ -132,6 +151,7 @@ span{
 		margin-left: 3%;
 		margin-right: 3%;
 	}
+	.elems__text__block__main,
 	.elems__text__block__right,
 	.elems__text__block__left,
 	.elems__text__block__bottom{
@@ -149,6 +169,7 @@ span{
 		align-items: flex-end;
 		right: 10px;
 	}
+	.elems__text__block__main,
 	.elems__text__block__left{
 		justify-content: center;
 		align-items: flex-start;
@@ -162,6 +183,11 @@ span{
 	.elems__text{
 		position: realtive;
 		left: 10px;
+		font-size: 30px;
+	}
+	.elems__text__small{
+		position: realtive;
+		left: 10px;
 		font-size: 20px;
 	}
 	.elems__text__under{
@@ -170,7 +196,7 @@ span{
 		font-size: 15px;
 	}
 	.block__link:hover .elems__text{
-		font-size: 25px;
+		font-size: 33px;
 	}
 	.space__small__horizontal{
 		height: 20px;
@@ -209,30 +235,46 @@ span{
 		justify-content: flex-start;
 		align-items: stretch;
 		height: 100%;
-		margin-bottom: 30px;
 	}
 	.elems__horizontal__border{
 		width: 94%;
 		margin-left: 3%;
 		margin-right: 3%;
+		margin-bottom: 30px;
 	}
+	.elems__text__block__main,
 	.elems__text__block__right,
 	.elems__text__block__left,
 	.elems__text__block__bottom{
 		background-color: rgba(255,255,255,255);
-		height: 100px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
 		position: realtive;
 	}
+	.elems__text__block__right,
+	.elems__text__block__left,
+	.elems__text__block__bottom{
+		height: 150px;
+	}
+	.elems__text__block__main{
+		height: 200px;
+	}
 	.elems__text{
 		position: realtive;
+		left: 10px;
+		font-size: 25px;
+	}
+	.elems__text__small{
+		position: realtive;
+		left: 10px;
+		font-size: 20px;
 	}
 	.elems__text__under{
 		position: absolute;
 		bottom: 10px;
+		font-size: 15px;
 	}
 	.space__small__horizontal{
 		height: 0px;
